@@ -1,22 +1,23 @@
 """Setup for working with python functions and methods"""
 
 example_list = ["banana", "apple", "orange", "mango", "watermelon"]
-example_string = "This is a long sentence and it's never gonna stooooooooooooooooop!"
+example_string = "This is a long sentence and it's never gonna stooooooooooooooooop!\n"
 #Use any integer or float as an example
 
 """
 Play with using these functions and methods:
+sorted()
 max()
 min()
-sorted()
-split
+len()
+print()   #Is there a return value?
 
 .append() #lists
-.clear()  #clear
-.index() -kill this one
+.clear()  #lists
+.pop()    #lists
+.split()  #strings
 .strip()  #strings
 .upper()  #strings
-.lower()  #strings
 """
 
 
