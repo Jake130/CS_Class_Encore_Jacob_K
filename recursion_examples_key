@@ -1,0 +1,56 @@
+def mult_by_adding(a:int, b:int):
+    #Instead of multiplying these terms together,
+    #Use recursion to return the result of adding a by itself b times
+    if b==0:
+        return 0
+    return a + mult_by_adding(a,b-1)
+
+def div_by_sub(a:int, b:int):
+    if b== 0:
+        print("Cannot divide by zero!")
+        return
+    if a<b:
+        return 0
+    if (a-b)<=0:
+        return 1
+    return 1 + div_by_sub(a-b, b)
+
+def triangle(length:int):
+    #Given a length, print a corresponding triangle shape
+    """
+    Ex: triangle(5)
+
+    *****
+    ****
+    ***
+    **
+    *
+
+    """
+    if length==0:
+        return
+    string = "*" * length
+    print(string)
+    triangle(length-1)
+
+
+def bowtie(length):
+    #Given a number n, print a corresponding bowtie shape
+    """
+    Ex: bowtie(4)
+    
+    ****
+    ***
+    **
+    *
+    **
+    ***
+    ****
+
+    """
+    if length == 1:
+        print("*")
+    else:
+        print("*" * length)
+        bowtie(length - 1)
+        print("*" * length)
